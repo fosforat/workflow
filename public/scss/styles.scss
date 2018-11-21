@@ -1,15 +1,11 @@
 @import "./reset/basic-reset";
+@import "./bootstrap/bootstrap";
 
 $grey: #f7f7f7;
 $gay: pink;
 
 body {
-	background: $grey;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
+
 }
 
 img {
