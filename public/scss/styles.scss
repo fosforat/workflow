@@ -1,19 +1,214 @@
 @import "./reset/basic-reset";
 @import "./bootstrap/bootstrap";
+@import "bootstrap/mixins/breakpoints";
 
 $grey: #f7f7f7;
 $gay: pink;
 
-body {
+.greenText{
+	color: #5fc3ac;
+}
+
+.blueText{
+	color: #22338a;
+}
+
+.pinkText{
+	color: #f27796;
+}
+
+.text-underline{
+	text-decoration: underline;
+}
+
+body{
+	font-family: 'sofia_prolight', sans-serif;
+	color: #424242;
+}
+
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'sofia_problack', sans-serif;
+}
+
+textarea{
+	resize: none;
+}
+
+.pageTitle{
+	color: #FFFFFF;
+	.subtitle{
+		font-size: 20px;
+	}
+	&.contact{
+		background: url("../dist/images/title-bg-contact.png")no-repeat center;
+	}
+	&.solutions{
+		background: url("../dist/images/title-bg-solutions.png")no-repeat center;
+	}
+	&.services{
+		background-color: #c54c70;
+	}
+}
+
+.maps{
+	.headOffice{
+		width: 50%;
+		height: 500px;
+		background: url("../dist/images/head-office-map.png")no-repeat center;
+	}
+	.dubai{
+		width: 50%;
+		height: 500px;
+		background: url("../dist/images/dubai-map.png")no-repeat center;
+	}
+}
+
+.contactBox{
+	min-width: 300px;
+	margin-top: -238px;
+	&.blue{
+		background-color: #2c4f8f;
+	}
+	&.orange{
+		background-color: #f68b2e;
+	}
+}
+
+.solutionBox{
+	text-align: center;
+	color: #FFFFFF;
+	height: 240px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	&:hover{
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	h1{
+		margin-bottom: 30px;
+	}
+	&.box1{
+		background: url("../dist/images/solutions-bg-1.png")no-repeat center;
+		height: 500px;
+	}
+	&.box2{
+		background: url("../dist/images/solutions-bg-2.png")no-repeat center;
+	}
+	&.box3{
+		background: url("../dist/images/solutions-bg-3.png")no-repeat center;
+	}
+	&.box4{
+		background: url("../dist/images/solutions-bg-4.png")no-repeat center;
+	}
+	&.box5{
+		background: url("../dist/images/solutions-bg-5.png")no-repeat center;
+	}
+}
+
+.supportedVendors{
+	background-color: #fbd85a;
+	text-align: center;
+	p{
+		font-size: 14px;
+	}
+	a{
+		font-family: 'sofia_probold', sans-serif;
+		color: #424242;
+	}
+}
+
+.featureBox{
+	background: url("../dist/images/manage-services-content-bg.png")no-repeat center;
+	background-size: cover !important;
+	p{
+		color: #FFFFFF;
+		font-family: 'sofia_probold', sans-serif;
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	ul{
+		padding-left: 4rem;
+		margin-bottom: 0;
+	}
+	hr{
+		border-color: #FFFFFF;
+	}
 
 }
 
-img {
-	margin-bottom: 3rem;
+nav.navbar{
+	background-color: #013e5a;
+	padding: 1rem 1rem;
+	.nav-link{
+		color: #FFFFFF;
+		font-family: 'sofia_probold', sans-serif;
+		@include media-breakpoint-up(lg){
+			padding-left: 2rem !important;
+		}
+	}
 }
 
-h1, p {
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	margin-bottom: 1.5rem;
+footer{
+	h1{
+		font-size: 3rem;
+		color: #FFFFFF;
+	}
+	.locations{
+		background: url("../dist/images/footer-locations-bg.png")no-repeat center;
+		background-size: cover !important;
+		min-height: 350px;
+	}
+	.contact{
+		background: url("../dist/images/footer-contact-bg.png")no-repeat center;
+		background-size: cover !important;
+		min-height: 350px;
+	}
+	.form-control{
+		font-family: 'sofia_proregular', sans-serif;
+		font-size: 1rem;
+		background-color: transparent !important;
+		border: 0;
+		box-shadow: none !important;
+		border-bottom: 1px solid #fdeee6;
+		border-radius: 0;
+		padding-left: 0;
+		margin-bottom: 1rem;
+		&:focus{
+			outline: none;
+		}
+		&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			color: #22338a;
+			opacity: 1; /* Firefox */
+		}
+
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #22338a;
+		}
+		&:-ms-input-placeholder { /* Microsoft Edge */
+			color: #22338a;
+		}
+	}
+	button[type="submit"]{
+		background: transparent !important;
+		border: 0 !important;
+		outline: 0 !important;
+		float: right;
+		font-family: 'sofia_problack', sans-serif;
+		font-size: 19px;
+		color: #22338a;
+		cursor: pointer;
+	}
+	.copyright{
+		font-size: 20px;
+		color: #828282;
+		font-weight: 300;
+	}
 }
