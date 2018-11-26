@@ -32,6 +32,10 @@ a{
 	}
 }
 
+strong{
+	font-family: 'sofia_probold', sans-serif;
+}
+
 h1,h2,h3,h4,h5,h6{
 	font-family: 'sofia_problack', sans-serif;
 }
@@ -144,6 +148,32 @@ textarea{
 
 }
 
+.eventList{
+	.header{
+		.title{
+			background-color: #f69330;
+			padding: 10px 15px;
+			border-right: 1px solid #FFFFFF;
+			color: #FFFFFF;
+			font-family: 'sofia_probold', sans-serif;
+		}
+	}
+	.content{
+		.row{
+			border-bottom: 1px solid #d7d7d7;
+			min-height: 68px;
+			.item{
+				font-family: 'sofia_promedium', sans-serif;
+				padding: 10px 15px;
+				font-size: 16px;
+			}
+			.title{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
 nav.navbar{
 	background-color: #013e5a;
 	padding: 1rem 1rem;
@@ -180,7 +210,8 @@ footer{
 		border-bottom: 1px solid #fdeee6;
 		border-radius: 0;
 		padding-left: 0;
-		margin-bottom: 1rem;
+		margin-bottom: 0;
+		height: 50px;
 		&:focus{
 			outline: none;
 		}
@@ -195,6 +226,10 @@ footer{
 		&:-ms-input-placeholder { /* Microsoft Edge */
 			color: #22338a;
 		}
+	}
+	textarea{
+		height: 75px !important;
+		margin-top: 10px;
 	}
 	button[type="submit"]{
 		background: transparent !important;
