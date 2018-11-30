@@ -13,6 +13,10 @@ $gay: pink;
 	color: #22338a;
 }
 
+.navyBlueText{
+	color: #00405a;
+}
+
 .pinkText{
 	color: #f27796;
 }
@@ -42,6 +46,24 @@ h1,h2,h3,h4,h5,h6{
 
 textarea{
 	resize: none;
+}
+
+.promo{
+	&.events{
+		min-height: 800px;
+		background: url("../dist/images/events-promo-bg.png")no-repeat center top;
+		background-size: cover !important; 
+		padding-top: 222px;
+		h1{
+			padding-left: 90px;
+		}
+		span{
+			display: block;
+			padding-right: 30px;
+			padding-top: 20px;
+			font-size: 20px;
+		}
+	}
 }
 
 .pageTitle{
