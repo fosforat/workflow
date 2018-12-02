@@ -17,6 +17,10 @@ $gay: pink;
 	color: #00405a;
 }
 
+.lightGreenText{
+	color: #5bb7ac;
+}
+
 .pinkText{
 	color: #f27796;
 }
@@ -48,6 +52,25 @@ textarea{
 	resize: none;
 }
 
+nav.navbar{
+	background-color: #013e5a;
+	padding: 1rem 1rem;
+	.nav-link{
+		color: #FFFFFF;
+		font-family: 'sofia_probold', sans-serif;
+		@include media-breakpoint-up(lg){
+			padding-left: 2rem !important;
+		}
+	}
+	&.transparent{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: transparent;
+	}
+}
+
 .promo{
 	&.events{
 		min-height: 800px;
@@ -73,12 +96,157 @@ textarea{
 	}
 	&.contact{
 		background: url("../dist/images/title-bg-contact.png")no-repeat center;
+		background-size: cover !important;
 	}
 	&.solutions{
 		background: url("../dist/images/title-bg-solutions.png")no-repeat center;
+		background-size: cover !important;
 	}
 	&.services{
 		background-color: #c54c70;
+	}
+	&.about{
+		background: url("../dist/images/title-bg-about.png")no-repeat center;
+		background-size: cover !important;
+	}
+	&.orange{
+		background-color: #f5872b;
+	}
+}
+
+.whySecurrent{
+	color: #2a3989;
+	img{
+		max-width: 100%;
+		margin-top: -80px;
+	}
+}
+
+.workingWithSecurrent{
+	background: url("../dist/images/working-with-seccurent-bg.png")no-repeat center;
+	background-size: cover !important;
+	color: #FFFFFF;
+	h1{
+		border-right: 1px solid #5fc3ac;
+		&.greenText{
+			border-right: 1px solid #FFFFFF;
+		}
+	}
+}
+
+.partnersCarousel{
+	h1{
+		color: #293b8a;
+	}
+	.slider{
+		.title{
+			min-height: 25px;
+			h6{
+				color: #22338a;
+			}
+		}
+		.logos{
+			.logo{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid #5fc3ac;
+				height: 80px;
+				width: 50%;
+				margin-right: 10px;
+				img{
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.slick-arrow{
+			&:before{
+				content: none;
+			}
+			&.slick-prev{
+				width: 15px;
+				height: 25px;
+				background: url("../dist/images/left-arrow-mini.png")no-repeat center;
+				top: 70px;
+			}
+			&.slick-next {
+				top: 72px;
+				right: -15px;
+				width: 13px;
+				height: 24px;
+				background: url("../dist/images/right-arrow-mini.png")no-repeat center;
+			}
+		}
+	}
+}
+
+.ourTeam{
+	background: url("../dist/images/our-team-bg.png")no-repeat center;
+	background-size: cover !important;
+	.teamCarousel{
+		.item{
+			img{
+				max-width: 95%;
+				margin-bottom: 10px;
+			}
+			h5{
+				margin-bottom: 0;
+			}
+		}
+		.slick-arrow{
+			width: 21px;
+			height: 39px;
+			top: 45%;
+			&:before{
+				content: none;
+			}
+			&.slick-prev{
+				background: url("../dist/images/left-arrow.png")no-repeat center;
+				left: -35px;
+			}
+			&.slick-next {
+				background: url("../dist/images/right-arrow.png")no-repeat center;
+			}
+		}
+	}
+}
+
+.badges{
+	text-align: center;
+	.icon{
+		width: 170px;
+		height: 170px;
+		border-radius: 100%;
+		border: 4px solid #5fc0ad;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 10px;
+	}
+	h3{
+		font-size: 50px;
+		color: #5fc0ad;
+		margin-bottom: 5px;
+	}
+	h6{
+		font-size: 22px;
+		color: #283e83;
+		margin-bottom: 4px;
+		font-family: 'sofia_promedium', sans-serif;
+	}
+	p{
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+.joinUs{
+	color: #FFFFFF;
+	background: url("../dist/images/join-us-bg.png")no-repeat center;
+	background-size: cover !important;
+	p{
+		margin-bottom: 30px;
 	}
 }
 
@@ -139,6 +307,46 @@ textarea{
 	}
 }
 
+.partner{
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 40px;
+	font-size: 14px;
+	h2{
+		color: #24338a;
+		margin-bottom: 30px;
+		font-weight: 800;
+		font-size: 23px;
+	}
+	.media{
+		padding-bottom: 40px;
+		.media-left{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #5fc3ac;
+			width: 250px;
+			height: 100px;
+			margin-right: 20px;
+		}
+		.media-body{
+			.media-heading{
+				font-weight: 800;
+				color: #60c3ac;
+				font-size: 20px;
+			}
+		}
+	}
+	&.group{
+		color: #FFFFFF;
+		h2{
+			color: #FFFFFF;
+		}
+		padding: 20px 20px 0 20px;
+		background: url("../dist/images/partner-group-bg.png")no-repeat center;
+		background-size: cover !important;
+	}
+}
+
 .supportedVendors{
 	background-color: #fbd85a;
 	text-align: center;
@@ -192,18 +400,6 @@ textarea{
 			.title{
 				font-size: 14px;
 			}
-		}
-	}
-}
-
-nav.navbar{
-	background-color: #013e5a;
-	padding: 1rem 1rem;
-	.nav-link{
-		color: #FFFFFF;
-		font-family: 'sofia_probold', sans-serif;
-		@include media-breakpoint-up(lg){
-			padding-left: 2rem !important;
 		}
 	}
 }
