@@ -32,6 +32,7 @@ $gay: pink;
 body{
 	font-family: 'sofia_prolight', sans-serif;
 	color: #424242;
+	overflow-x: hidden;
 }
 
 a{
@@ -68,6 +69,7 @@ nav.navbar{
 		left: 0;
 		right: 0;
 		background-color: transparent;
+		z-index: 10;
 	}
 }
 
@@ -131,6 +133,69 @@ nav.navbar{
 		&.greenText{
 			border-right: 1px solid #FFFFFF;
 		}
+	}
+}
+
+.referencesCarousel{
+	.logo{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #5fc3ac;
+		height: 80px;
+		margin-right: 10px;
+	}
+	.slick-arrow{
+		&:before{
+			content: none;
+		}
+		&.slick-prev{
+			width: 15px;
+			height: 25px;
+			background: url("../dist/images/left-arrow-mini.png")no-repeat center;
+		}
+		&.slick-next {
+			right: -15px;
+			width: 13px;
+			height: 24px;
+			background: url("../dist/images/right-arrow-mini.png")no-repeat center;
+		}
+	}
+}
+
+.trustedBy{
+	background: url("../dist/images/trusted-by-bg.png")no-repeat center;
+	background-size: cover !important;
+}
+
+.whatWeDo{
+	img{
+		max-width: 100%;
+		margin-top: -90px;
+	}
+}
+
+.nowDubai{
+	background: url("../dist/images/now-dubai-bg.png")no-repeat center;
+	background-size: cover !important;
+	padding-bottom: 20px;
+	img{
+		height: 80%;
+	}
+	p{
+		color: #FFFFFF;
+		padding-left: 30px;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+}
+
+.promoCarousel{
+	.item{
+		background-size: cover !important;
+		height: 100vh;
+		background-position: 50%;
+		position: relative;
 	}
 }
 
@@ -284,6 +349,22 @@ nav.navbar{
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+	&.index{
+		justify-content: flex-start;
+		text-align: left;
+		&.box1{
+			background: url("../dist/images/solutions/network-security.png")no-repeat;
+		}
+		&.box2{
+			background: url("../dist/images/solutions/data-security.png")no-repeat;
+		}
+		&.box3{
+			background: url("../dist/images/solutions/identiy-access.png")no-repeat;
+		}
+		&.box4{
+			background: url("../dist/images/solutions/advanced-threat.png")no-repeat;
+		}
+	}
 	&:hover{
 		color: #FFFFFF;
 		text-decoration: none;
@@ -311,6 +392,19 @@ nav.navbar{
 	&.box5{
 		background: url("../dist/images/solutions-bg-5.png")no-repeat center;
 		background-size: cover !important;
+	}
+}
+
+.seeAllSolutions{
+	background: url("../dist/images/see-all-btn-bg.png")no-repeat center;
+	background-size: cover !important;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	font-family: 'sofia_problack', sans-serif;
+	font-size: 30px;
+	&:hover{
+		color: #FFFFFF;
 	}
 }
 

@@ -8,7 +8,16 @@ $(function () {
     $('.teamCarousel').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        centerPadding: '60px',
+        slidesToScroll: 1
+    });
+
+    $('.referencesCarousel').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1
+    });
+
+    $('.promoCarousel').slick({
+        infinite: true
     });
 });
