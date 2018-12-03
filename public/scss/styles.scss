@@ -255,11 +255,13 @@ nav.navbar{
 		width: 50%;
 		height: 500px;
 		background: url("../dist/images/head-office-map.png")no-repeat center;
+		background-size: cover !important;
 	}
 	.dubai{
 		width: 50%;
 		height: 500px;
 		background: url("../dist/images/dubai-map.png")no-repeat center;
+		background-size: cover !important;
 	}
 }
 
@@ -292,18 +294,23 @@ nav.navbar{
 	&.box1{
 		background: url("../dist/images/solutions-bg-1.png")no-repeat center;
 		height: 500px;
+		background-size: cover !important;
 	}
 	&.box2{
 		background: url("../dist/images/solutions-bg-2.png")no-repeat center;
+		background-size: cover !important;
 	}
 	&.box3{
 		background: url("../dist/images/solutions-bg-3.png")no-repeat center;
+		background-size: cover !important;
 	}
 	&.box4{
 		background: url("../dist/images/solutions-bg-4.png")no-repeat center;
+		background-size: cover !important;
 	}
 	&.box5{
 		background: url("../dist/images/solutions-bg-5.png")no-repeat center;
+		background-size: cover !important;
 	}
 }
 
