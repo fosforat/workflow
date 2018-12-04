@@ -17,8 +17,10 @@ $(function () {
         slidesToScroll: 1
     });
 
-    $('.promoCarousel').slick({
+    var promoCarousel = $('.promoCarousel').slick({
         infinite: true,
-        autoplay: false
+        autoplay: true,
+        prevArrow: $('.sliderArrow .left'),
+        nextArrow: $('.sliderArrow .right')
     });
 });

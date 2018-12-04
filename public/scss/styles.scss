@@ -36,6 +36,7 @@ body{
 }
 
 a{
+	transition: all 0.4s;
 	&:hover{
 		text-decoration: none;
 	}
@@ -59,8 +60,12 @@ nav.navbar{
 	.nav-link{
 		color: #FFFFFF;
 		font-family: 'sofia_probold', sans-serif;
+		transition: all 0.5s;
 		@include media-breakpoint-up(lg){
-			padding-left: 2rem !important;
+			margin-left: 1.5rem !important;
+		}
+		&:hover{
+			background-color: #f89a44;
 		}
 	}
 	&.transparent{
@@ -197,13 +202,29 @@ nav.navbar{
 		left: 0;
 		right: 0;
 		bottom: 0;
+		.sliderArrow{
+			display: flex;
+			justify-content: flex-end;
+			padding-right: 40px;
+			a{
+				width: 57px;
+				height: 61px;
+				display: block;
+			}
+			.left{
+				background: rgba(42, 61, 138, 0.86) url("../dist/images/left-arrow.png")no-repeat center;
+			}
+			.right{
+				background: rgba(248, 158, 71, 0.86) url("../dist/images/right-arrow.png")no-repeat center;
+			}
+		}
 	}
 }
 
 .promoCarousel{
 	.item{
 		background-size: cover !important;
-		height: 100vh;
+		height: calc(100vh - 150px);
 		background-position: 50%;
 		position: relative;
 	}
@@ -424,9 +445,9 @@ nav.navbar{
 			border-color: #22338a;
 			color: #22338a;
 			&:hover{
-				background-color: #22338a;
+				background-color: #f79741;
 				color: #FFFFFF;
-				border-color: #FFFFFF;
+				border-color: #f79741;
 			}
 		}
 		span{
