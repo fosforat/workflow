@@ -190,6 +190,16 @@ nav.navbar{
 	}
 }
 
+.promo{
+	position: relative;
+	.idcDownload{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
 .promoCarousel{
 	.item{
 		background-size: cover !important;
@@ -392,6 +402,36 @@ nav.navbar{
 	&.box5{
 		background: url("../dist/images/solutions-bg-5.png")no-repeat center;
 		background-size: cover !important;
+	}
+}
+
+.idcDownload{
+	.content{
+		background: url('../dist/images/download-bg.png')no-repeat center;
+		background-size: cover !important;
+		height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		img{
+			max-height: 100%;
+			&.idcLogo{
+				height: 60%;
+			}
+		}
+		a{
+			margin-left: auto;
+			border-color: #22338a;
+			color: #22338a;
+			&:hover{
+				background-color: #22338a;
+				color: #FFFFFF;
+				border-color: #FFFFFF;
+			}
+		}
+		span{
+			color: #22338a;
+		}
 	}
 }
 
