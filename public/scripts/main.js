@@ -20,6 +20,12 @@ $(function () {
     var promoCarousel = $('.promoCarousel').slick({
         infinite: true,
         autoplay: true,
+        arrow: false
+    });
+
+    var downloadSlider = $('.downloadSlider').slick({
+        infinite: true,
+        autoplay: false,
         prevArrow: $('.sliderArrow .left'),
         nextArrow: $('.sliderArrow .right')
     });

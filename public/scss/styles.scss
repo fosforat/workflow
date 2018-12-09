@@ -57,15 +57,22 @@ textarea{
 nav.navbar{
 	background-color: #013e5a;
 	padding: 1rem 1rem;
-	.nav-link{
-		color: #FFFFFF;
-		font-family: 'sofia_probold', sans-serif;
-		transition: all 0.5s;
-		@include media-breakpoint-up(lg){
-			margin-left: 1.5rem !important;
+	.nav-item{
+		.nav-link {
+			color: #FFFFFF;
+			font-family: 'sofia_probold', sans-serif;
+			transition: all 0.5s;
+			@include media-breakpoint-up(lg) {
+				margin-left: 1.5rem !important;
+			}
+			&:hover {
+				background-color: #f89a44;
+			}
 		}
-		&:hover{
-			background-color: #f89a44;
+		&:last-child{
+			.nav-link{
+				padding-right: 0;
+			}
 		}
 	}
 	&.transparent{
@@ -201,7 +208,7 @@ nav.navbar{
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		bottom: -6px;
 		.sliderArrow{
 			display: flex;
 			justify-content: flex-end;
@@ -347,17 +354,17 @@ nav.navbar{
 }
 
 .maps{
-	.headOffice{
+	#headOffice{
 		width: 50%;
 		height: 500px;
-		background: url("../dist/images/head-office-map.png")no-repeat center;
-		background-size: cover !important;
+		/*background: url("../dist/images/head-office-map.png")no-repeat center;
+		background-size: cover !important;*/
 	}
-	.dubai{
+	#dubai{
 		width: 50%;
 		height: 500px;
-		background: url("../dist/images/dubai-map.png")no-repeat center;
-		background-size: cover !important;
+		/*background: url("../dist/images/dubai-map.png")no-repeat center;
+		background-size: cover !important;*/
 	}
 }
 
@@ -369,6 +376,18 @@ nav.navbar{
 	}
 	&.orange{
 		background-color: #f68b2e;
+	}
+}
+
+.solutionDownload{
+	background: url("../dist/images/solutions-content.png")no-repeat center;
+	background-size: cover;
+	padding: 40px 0;
+	color: #FFFFFF;
+	font-size: 20px;
+	p{
+		padding-right: 40px;
+		margin-bottom: 0;
 	}
 }
 
@@ -561,6 +580,51 @@ nav.navbar{
 			}
 			.title{
 				font-size: 14px;
+			}
+		}
+	}
+}
+
+.newsLetter{
+	.newsLetterForm{
+		padding: 20px;
+		background-color: #bed653;
+		form {
+			border: 1px solid #2c508f;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			h6 {
+				color: #2c508f;
+				font-weight: 700;
+				text-align: right;
+				margin-bottom: 5px;
+			}
+			input[type="email"] {
+				font-size: 14px;
+				color: #2c508f;
+				display: block;
+				line-height: normal;
+				outline: 0;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-appearance: none;
+				border-bottom: 1px solid #2c508f !important;
+				background: transparent;
+				padding: 0 0 5px;
+				border-width: 0;
+				font-weight: 100;
+				position: relative;
+				width: 100%;
+			}
+			input[type="submit"] {
+				cursor: pointer;
+				font-size: 35px;
+				line-height: 16px;
+				text-decoration: none;
+				background: url(../dist/images/newsletter_ok.png) no-repeat;
+				width: 30px;
+				height: 30px;
+				border: 0;
 			}
 		}
 	}
