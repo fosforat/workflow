@@ -67,10 +67,13 @@
         <div class="newsLetterForm">
             <form action="/send-contact-form.php" method="post" name="subscription" enctype="multipart/form-data">
                 <div class="row align-items-center">
-                    <div class="col-4 s-heading">
+                    <div class="col-5">
+                        <p class="mb-0">Subscribe to our newsletter to receive exclusive offers and the latest  news on our products and services.</p>
+                    </div>
+                    <div class="col-2 s-heading">
                         <h6>NEWSLETTER</h6>
                     </div>
-                    <div class="col-5">
+                    <div class="col-4">
                         <input type="email" name="data[email]" placeholder="Enter your e-mail..." required="">
                     </div>
                     <div class="col-1"><input type="submit" value=""></div>
@@ -120,12 +123,14 @@
 </div>
 
 <script>
-    let headOfficeMap;
-    let dubaiMap;
+    let headOfficeMap,
+        dubaiMap,
+        headOfficeLatLng = {lat: 41.06771, lng: 29.0060453},
+        dubaiLatLng = {lat: 25.0978168, lng: 55.1579976}
 
     function initMap() {
         headOfficeMap = new google.maps.Map(document.getElementById('headOffice'), {
-            center: {lat: 41.06771, lng: 29.0060453},
+            center: headOfficeLatLng,
             zoom: 16,
             styles: [
                 {
@@ -365,13 +370,14 @@
             ]
         });
 
-        /*var headOfficeMarker = new google.maps.Marker({
-            position: {lat: 41.06771, lng: 29.0060453},
+        var headOfficeMarker = new google.maps.Marker({
+            position: headOfficeLatLng,
+            icon: './dist/images/pin-icon-head-office.png',
             map: headOfficeMap
-        });*/
+        });
 
         dubaiMap = new google.maps.Map(document.getElementById('dubai'), {
-            center: {lat: 25.0978168, lng: 55.1579976},
+            center: dubaiLatLng,
             zoom: 10,
             styles: [
                 {
@@ -458,10 +464,11 @@
             ]
         });
 
-        /*var dubaiMarker = new google.maps.Marker({
-            position: {lat: 25.0978168, lng: 55.1579976},
+        var dubaiMarker = new google.maps.Marker({
+            position: dubaiLatLng,
+            icon: './dist/images/pin-icon-dubai.png',
             map: dubaiMap
-        });*/
+        });
     }
 
 </script>
@@ -470,8 +477,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr83DEcQrFbapCoREyeo7lk2MxpLMgN0c&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr83DEcQrFbapCoREyeo7lk2MxpLMgN0c&callback=initMap"></script>
 <script src="./dist/scripts.js"></script>
 </body>
 </html>

@@ -214,15 +214,43 @@ nav.navbar{
 			justify-content: flex-end;
 			padding-right: 40px;
 			a{
-				width: 57px;
-				height: 61px;
+				width: 40px;
+				height: 43px;
 				display: block;
+				background-size: 37% !important;
 			}
 			.left{
 				background: rgba(42, 61, 138, 0.86) url("../dist/images/left-arrow.png")no-repeat center;
 			}
 			.right{
 				background: rgba(248, 158, 71, 0.86) url("../dist/images/right-arrow.png")no-repeat center;
+			}
+		}
+		.content{
+			//background: url('../dist/images/download-bg.png')no-repeat center;
+			background-size: cover !important;
+			height: 110px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			img{
+				max-height: 100%;
+				&.idcLogo{
+					height: 60%;
+				}
+			}
+			a{
+				margin-left: auto;
+				border-color: #22338a;
+				color: #22338a;
+				&:hover{
+					background-color: #f79741;
+					color: #FFFFFF;
+					border-color: #f79741;
+				}
+			}
+			span{
+				color: #22338a;
 			}
 		}
 	}
@@ -283,6 +311,27 @@ nav.navbar{
 		}
 	}
 }
+
+/*.awardsSlider{
+	.slick-arrow{
+		&:before{
+			content: none;
+		}
+		&.slick-prev{
+			width: 15px;
+			height: 25px;
+			background: url("../dist/images/left-arrow-mini.png")no-repeat center;
+			top: 70px;
+		}
+		&.slick-next {
+			top: 72px;
+			right: -15px;
+			width: 13px;
+			height: 24px;
+			background: url("../dist/images/right-arrow-mini.png")no-repeat center;
+		}
+	}
+}*/
 
 .ourTeam{
 	background: url("../dist/images/our-team-bg.png")no-repeat center;
@@ -445,36 +494,6 @@ nav.navbar{
 	}
 }
 
-.idcDownload{
-	.content{
-		background: url('../dist/images/download-bg.png')no-repeat center;
-		background-size: cover !important;
-		height: 110px;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		img{
-			max-height: 100%;
-			&.idcLogo{
-				height: 60%;
-			}
-		}
-		a{
-			margin-left: auto;
-			border-color: #22338a;
-			color: #22338a;
-			&:hover{
-				background-color: #f79741;
-				color: #FFFFFF;
-				border-color: #f79741;
-			}
-		}
-		span{
-			color: #22338a;
-		}
-	}
-}
-
 .seeAllSolutions{
 	background: url("../dist/images/see-all-btn-bg.png")no-repeat center;
 	background-size: cover !important;
@@ -591,8 +610,12 @@ nav.navbar{
 		background-color: #bed653;
 		form {
 			border: 1px solid #2c508f;
-			padding-top: 15px;
-			padding-bottom: 15px;
+			padding: 15px;
+			p{
+				color: #2c508f;
+				font-weight: bold;
+				font-size: 14px;
+			}
 			h6 {
 				color: #2c508f;
 				font-weight: 700;

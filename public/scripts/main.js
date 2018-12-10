@@ -5,6 +5,14 @@ $(function () {
         slidesToScroll: 1
     });
 
+    $('.awardsSlider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true
+    });
+
     $('.teamCarousel').slick({
         infinite: true,
         slidesToShow: 4,
@@ -17,13 +25,13 @@ $(function () {
         slidesToScroll: 1
     });
 
-    var promoCarousel = $('.promoCarousel').slick({
+    $('.promoCarousel').slick({
         infinite: true,
         autoplay: true,
         arrow: false
     });
 
-    var downloadSlider = $('.downloadSlider').slick({
+    $('.downloadSlider').slick({
         infinite: true,
         autoplay: false,
         prevArrow: $('.sliderArrow .left'),
