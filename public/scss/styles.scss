@@ -315,26 +315,26 @@ nav.navbar{
 	}
 }
 
-/*.awardsSlider{
+.awardsSlider{
 	.slick-arrow{
 		&:before{
 			content: none;
 		}
 		&.slick-prev{
-			width: 15px;
-			height: 25px;
+			width: 20px;
+			height: 50px;
 			background: url("../dist/images/left-arrow-mini.png")no-repeat center;
-			top: 70px;
+			background-size: 100%;
 		}
 		&.slick-next {
-			top: 72px;
-			right: -15px;
-			width: 13px;
-			height: 24px;
+			right: -20px;
+			width: 20px;
+			height: 48px;
 			background: url("../dist/images/right-arrow-mini.png")no-repeat center;
+			background-size: 100%;
 		}
 	}
-}*/
+}
 
 .ourTeam{
 	background: url("../dist/images/our-team-bg.png")no-repeat center;
@@ -458,16 +458,16 @@ nav.navbar{
 		justify-content: flex-start;
 		text-align: left;
 		&.box1{
-			background: url("../dist/images/solutions/network-security.png")no-repeat;
+			background: url("../dist/images/solutions/network-security.jpg")no-repeat;
 		}
 		&.box2{
-			background: url("../dist/images/solutions/data-security.png")no-repeat;
+			background: url("../dist/images/solutions/data-security.jpg")no-repeat;
 		}
 		&.box3{
-			background: url("../dist/images/solutions/identiy-access.png")no-repeat;
+			background: url("../dist/images/solutions/identity-access.jpg")no-repeat;
 		}
 		&.box4{
-			background: url("../dist/images/solutions/advanced-threat.png")no-repeat;
+			background: url("../dist/images/solutions/advanced-threat.jpg")no-repeat;
 		}
 	}
 	&:hover{
@@ -478,7 +478,7 @@ nav.navbar{
 		margin-bottom: 30px;
 	}
 	&.box1{
-		background: url("../dist/images/solutions-bg-1.png")no-repeat center;
+		background: url("../dist/images/solutions/network-security.jpg")no-repeat center;
 		height: 500px;
 		background-size: cover !important;
 	}
@@ -548,7 +548,7 @@ nav.navbar{
 			color: #FFFFFF;
 		}
 		padding: 20px 20px 0 20px;
-		background: url("../dist/images/partner-group-bg.png")no-repeat center;
+		background: url("../dist/images/partner-group-bg.jpg")no-repeat center;
 		background-size: cover !important;
 	}
 }
